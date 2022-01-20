@@ -1,0 +1,1 @@
+caseID,ParentID,popID,popName,dogCount,dogsE,dogsV,Th,Td,dogDensityK,dayGenerated,serialInterval,dayInfectious,infectiousPeriod,x_coord,y_coord,strainID,typeOfCase,nExcursions,nDistinctDogs,diedE,nAbandonments,nBitesE,nBitesV,nReinfections,nFailedTransmissions,nTransmissions,Symptoms.started,Month.symptoms.started,Quarter.symptoms.started
