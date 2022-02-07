@@ -1,0 +1,13 @@
+Distribution,Pruning threshold (%),Distance cutoff (meters),Time cutoff (days)
+Gamma,95,"Owned: 2696;
+Unowned/Wildlife: 8300",81
+Gamma,97.5,"Owned: 3471;
+Unowned/Wildlife: 10165",99
+Lnorm,95,"Owned: 11023;
+Unowned/Wildlife: 18787",85
+Lnorm,97.5,"Owned: 19006;
+Unowned/Wildlife: 29766",115
+Weibull,95,"Owned: 6081;
+Unowned/Wildlife: 8219",84
+Weibull,97.5,"Owned: 8193;
+Unowned/Wildlife: 10192",103

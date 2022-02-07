@@ -36,7 +36,7 @@ load("data/grd_1000.rda")
 grd.1000.sf <- sf::st_as_sf(grd.1000)
 grd.1000.sf$Mid <- grd.1000.sf$`2557`; summary(grd.1000.sf$Mid)
 grd.1000.sf$End <- grd.1000.sf$`5082`; summary(grd.1000.sf$End)
-cases_corrected <- readRDS(file = "output/matching_data_caselist.rda") 
+cases_corrected <- readRDS(file = "output/matching_data_caselist.rda") # CREATED IN 06_make_caselist
 # See 06_Make_Case_List.R for generation of this file; includes Species
 # Identify type of case, sort out dates by month
 
@@ -401,7 +401,7 @@ p_move
 #                       Distribution of carnivores bitten
 ###################################################################################
 # Read in data
-case_list <- readRDS(file = "output/clean_bite_data_no_densities.rda")
+case_list <- readRDS(file = "output/clean_bite_data_no_densities_deid.rda")
 
 sim_bites <- readRDS("java_output/nBitten_distribution.rds")
 sim_bite_density <- readRDS("java_output/densityBitten_distribution.rds")

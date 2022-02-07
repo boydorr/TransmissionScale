@@ -271,22 +271,6 @@ SIdouble_weibull_lnorm$aic
 SIdouble_weibull_gamma$aic
 SIdouble_weibull_weibull$aic # gamma actually better here.. but weibull not too far off
 
-## OLD APPROACH ##
-# # Simulated serial intervals (incubation period + Infectious period wait time (i.e. time to a bite) & convolution
-# # fitted with a lognormal distribution
-# x = 1000000
-# incx = rlnorm(x, meanlog = inc_lnorm$estimate["meanlog"], sdlog = inc_lnorm$estimate["sdlog"])
-# infx = rlnorm(x, meanlog = inf_lnorm$estimate["meanlog"], sdlog = inf_lnorm$estimate["sdlog"])
-# SI_lnorm = fitdist(incx + runif(x, min=0, max=infx), "lnorm"); SI_lnorm
-# SIdouble_lnorm = fitdist(rlnorm(x, SI_lnorm$estimate["meanlog"], SI_lnorm$estimate["sdlog"]) +
-#                            rlnorm(x, SI_lnorm$estimate["meanlog"], SI_lnorm$estimate["sdlog"]), "lnorm")
-# # fitted with a Gamma distribution
-# incx = rgamma(x, shape = inc_gamma$estimate["shape"], rate = inc_gamma$estimate["rate"])
-# infx = rgamma(x, shape = inf_gamma$estimate["shape"], rate = inf_gamma$estimate["rate"]);
-# SI_gamma = fitdist(incx + runif(x, min=0, max=infx), "gamma")
-# SIdouble_gamma = fitdist(rgamma(x, shape = SI_gamma$estimate["shape"], rate = SI_gamma$estimate["rate"]) +
-#                            rgamma(x, shape = SI_gamma$estimate["shape"], rate = SI_gamma$estimate["rate"]), "gamma")
-
 # Write parameters for transmission tree inference
 SI_params <- data.frame(
   SI_ml = coef(ser_lnorm)["meanlog"], SI_sdlog = coef(ser_lnorm)["sdlog"],
