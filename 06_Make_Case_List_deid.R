@@ -1,4 +1,5 @@
 # Make case list for java ----
+# NOTE - THIS MAY TAKE POINTS OFF THE ALLOCATED GRIDS DUE TO DE-IDENTIFYING DATA 
 
 library(lubridate)
 library(dplyr)
@@ -170,8 +171,8 @@ nrow(cases_corrected) # 3281
 table(cases_corrected$Species) # 3067 Domestic dogs
 
 # Get incursions to pass to typeOfCase
-incs <- read_csv("output/incursions_java.csv")
-# incs <- read_csv("output/incursions_java_deid.csv")
+# incs <- read_csv("output/incursions_java.csv")
+incs <- read_csv("output/incursions_java_deid.csv")
 
 # Make sure we have the right column names for Java...
 md <- data.frame(caseID = cases_corrected$ID, 

@@ -1,4 +1,5 @@
 # Step 5: Generate incursions for java ----
+# NOTE - THIS MAY TAKE POINTS OFF THE ALLOCATED GRIDS DUE TO DE-IDENTIFYING DATA
 
 library(lubridate)
 library(dplyr)
@@ -134,7 +135,7 @@ incursions.reallocated <-
 
 # MR: adding this line to make sure I can match up incursions in the simulated
 # outputs for comparing to empirical trees
-readr::write_csv(incursions.reallocated[, c("caseID", "strainID")], "output/inc_lookups.csv")
+readr::write_csv(incursions.reallocated[, c("caseID", "strainID")], "output/inc_lookups_deid.csv")
 
 # Subset to the variables that we want to include for the file for the Java code
 col_names <- c("caseID","ParentID","popID","popName","dogCount","dogsE","dogsV",	
