@@ -1,3 +1,9 @@
+# This file serves to compile ABC outcomes into a format that is suitable for sharing.
+# As such, it reads in files that have not been shared publicly because of the large
+# file size. It will therefore not run from this repository.
+# Instead, the user is referred to the file that is output and shared publicly, namely 
+#      "java_output/Round2_Compiled/All_Round2_Reliability.rda"
+
 rm(list=ls()); options(stringsAsFactors = F)
 
 library(dplyr)
