@@ -2,10 +2,8 @@
 rm(list=ls())
 library(dplyr)
 
-setwd("~/Developer/Serengeti_Rabies/")
-
-f_INCURSIONS <- "output/incursions_java.csv"
-f_STOP_INCURSIONS <- "output/stop_incursions_java.csv"
+f_INCURSIONS <- "output/incursions_java_deid.csv"
+f_STOP_INCURSIONS <- "output/stop_incursions_java_deid.csv"
 
 # Read in incursions file
 incursions_java <- read.csv(file = paste0(f_INCURSIONS))
