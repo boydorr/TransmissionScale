@@ -1,5 +1,7 @@
 # Make incursions to simulate multiple runs to compute R0, Rebecca Mancy, started 2021-08-10
 
+# Note that the files required to run this script are large and are not provided.
+
 rm(list=ls())
 
 library(ggplot2)
@@ -7,8 +9,7 @@ library(dplyr)
 library(tidyr) # library(sp)
 library(sp)
 
-# setwd("~/Developer/Serengeti_Rabies/")
-ff <- "java_output/"  #ff <- "/Volumes/SimOutput01/Rabies_Sim_Output/"
+ff <- "java_output/" 
 end.in.days <- 5112
 
 f_LOWER_VAX <- "Round3_LOWER_VAX_1000"

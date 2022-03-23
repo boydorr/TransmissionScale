@@ -1,9 +1,10 @@
-# Make NAIVE_POP incursions, Rebecca Mancy, started 2021-03-30
+# Make incursions under clustered scenario, Rebecca Mancy, started 2021-03-30
+
+# Note that the files required to run this script are large and are not provided.
+
 rm(list=ls())
 
-setwd("~/Developer/Serengeti_Rabies/")
-ff <- "/Volumes/SimOutput01/Rabies_Sim_Output/"
-
+ff <- "java_output/"
 f_LOWER_VAX <- "Round3_LOWER_VAX_1000"
 f_NAIVE_POP <- "Round3_NAIVE_POP_1000"
 n_runs <- 1000
