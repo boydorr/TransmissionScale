@@ -1,7 +1,6 @@
 # Rebecca Mancy, started 2021-01
 
 rm(list=ls())
-library(lubridate); library(dplyr); library(TSP); library(sp); library(ggplot2); library(rgdal)
 start.date <- as.Date("2002-01-01")
 end.date <- as.Date("2015-12-31")
 
